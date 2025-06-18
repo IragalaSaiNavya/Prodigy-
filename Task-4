@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #007BFF, #00C6FF);
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.8);
+            border-bottom: 5px solid #00C6FF;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: black;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .section {
+            padding: 60px;
+            text-align: center;
+        }
+
+        .about, .skills, .projects, .contact {
+            background: rgba(0, 0, 0, 0.7);
+            margin: 40px auto;
+            padding: 40px;
+            border-radius: 10px;
+            width: 80%;
+        }
+
+        .skills ul, .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills li, .projects li {
+            background: white;
+            color: black;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Profile.jpg" alt="Profile Picture" class="profile-img">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Web Developer | Designer | Innovator</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <p>I am a passionate web developer with experience in designing and building interactive websites.</p>
+    </section>
+
+    <section id="skills" class="section skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>UI/UX Design</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="section projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Portfolio Website</li>
+            <li>Task Manager App</li>
+            <li>E-commerce Platform</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <p>Email: iragalasainavya@gmail.com</p>
+        <p>LinkedIn: linkedin.com/in/Iragala Sai Navya</p>
+    </section>
+
+</body>
+</html>
